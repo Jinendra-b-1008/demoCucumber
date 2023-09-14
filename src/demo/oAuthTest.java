@@ -2,11 +2,13 @@ package demo;
 import static io.restassured.RestAssured.given;
 
 import java.net.MalformedURLException;
+import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
@@ -100,16 +102,15 @@ public class oAuthTest {
 				Assert.assertTrue(a.equals(expectedLists));
 			
 				
-//		.when().log().all()
-//		.get("https://rahulshettyacademy.com/getCourse.php").asString();
-//		System.out.println(response);
-
-//		.expect().defaultParser(Parser.JSON)
-//		.when()
-//		.get("https://rahulshettyacademy.com/getCourse.php").as(GetCourse.class);
-//		
-//		System.out.println(gc.getInstructor());
-//		System.out.println(gc.getLinkedIn());
+		
+		
+		System.out.println(gc.getInstructor());
+		System.out.println(gc.getLinkedIn());
+		
+		@Test
+		public void deleteing() {
+			System.out.println("it is clone example");
+		}
 				
 	}
 
